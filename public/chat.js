@@ -5,7 +5,7 @@ let username;
 function setUsername() {
   username = document.getElementById('username').value;
   if (username) {
-    socket = new WebSocket('ws://private-chat-system.fly.dev/');  // Connect to the WebSocket server
+    socket = new WebSocket('wss://private-chat-system.fly.dev/');  // Connect to the WebSocket server
 
     socket.onopen = function () {
       console.log('Connected to WebSocket server');
